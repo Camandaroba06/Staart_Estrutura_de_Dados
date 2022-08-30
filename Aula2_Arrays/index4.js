@@ -22,7 +22,7 @@ for (let i = 0; i < redesSociais.length; i++) {
 }
 for (let i = 0; i < redesSociais.length; i++) {
   // Ou de uma forma mais bacana:
-  console.log(`${i}: ${redesSociais[i]}`);
+  console.log(`${i}: ${redesSociais[i]}`); // usa a crase ao inves de aspas simples :D
 }
 for (const i in redesSociais) {
   console.log(redesSociais[i]);
