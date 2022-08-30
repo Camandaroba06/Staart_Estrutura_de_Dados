@@ -36,8 +36,14 @@ console.log(contasBaixas2); // True
 const valorBaixo = contas.some((valor) => valor > 10);
 console.log(valorBaixo);
 
-//concat:
+// Concat:
 const contaDoCamandaroba = [10, 20, 30, 40, 50];
 const contaDaOutra = [5, 6, 7, 8, 9];
 const contaDosDois = contaDoCamandaroba.concat(contaDaOutra);
 console.table(contaDosDois);
+
+// Fill:
+const contaZerada = contaDoCamandaroba.fill(0);
+console.table(contaZerada);
+
+// Flat:
