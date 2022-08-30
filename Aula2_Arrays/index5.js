@@ -19,7 +19,7 @@ const caras_Find_Ind = contas.findIndex((valor) => valor > 30); //encontra o ind
 console.log(caras_Find); // 40
 console.log(caras_Find_Ind); // 2
 
-// Reduce:
+// Reduce:               -> Soma cada termo do Array
 //const contas = [10, 20, 40, 100];
 const totalAPagar = contas.reduce((valor, acumulador) => valor + acumulador, 0);
 console.log(totalAPagar); // 170
@@ -36,17 +36,17 @@ console.log(contasBaixas2); // True
 const valorBaixo = contas.some((valor) => valor > 10);
 console.log(valorBaixo);
 
-// Concat:
+// Concat:               -> Concatena Arrays
 const contaDoCamandaroba = [10, 20, 30, 40, 50];
 const contaDaOutra = [5, 6, 7, 8, 9];
 const contaDosDois = contaDoCamandaroba.concat(contaDaOutra);
 console.table(contaDosDois);
 
-// Fill:
+// Fill:                 -> Preenche Arrays
 const contaZerada = contaDoCamandaroba.fill(0);
 console.table(contaZerada);
 
-// Flat:       -> Juntar Array com subArray:
+// Flat:                 -> Juntar Array com subArray:
 const contaComSub = [10, 20, 30, 40, 50, [1, 2, 3, 4]];
 const novaContaSemSub = contaComSub.flat();
 console.table(novaContaSemSub);
