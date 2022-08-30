@@ -28,3 +28,9 @@ console.table(frutas);
 
 frutas.shift(); // Remove o primeiro termo do Array
 console.table(frutas);
+
+frutas.splice(1, 1); // Remove um termo escolhido, os argumentos são (quantidade, indice, substituto [caso tenha])
+console.table(frutas);
+
+frutas.splice(1, 1, 'Fruta Subtituta');
+console.table(frutas);
