@@ -46,4 +46,7 @@ console.table(contaDosDois);
 const contaZerada = contaDoCamandaroba.fill(0);
 console.table(contaZerada);
 
-// Flat:
+// Flat:       -> Juntar Array com subArray:
+const contaComSub = [10, 20, 30, 40, 50, [1, 2, 3, 4]];
+const novaContaSemSub = contaComSub.flat();
+console.table(novaContaSemSub);
