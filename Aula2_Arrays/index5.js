@@ -16,10 +16,28 @@ console.table(caras);
 //const contas = [10, 20, 40, 100];
 const caras_Find = contas.find((valor) => valor > 30); // encontra a primeira maior que 30 e armazena
 const caras_Find_Ind = contas.findIndex((valor) => valor > 30); //encontra o indice
-console.table(caras_Find);
-console.log(caras_Find_Ind);
+console.log(caras_Find); // 40
+console.log(caras_Find_Ind); // 2
 
 // Reduce:
 //const contas = [10, 20, 40, 100];
 const totalAPagar = contas.reduce((valor, acumulador) => valor + acumulador, 0);
-console.log(totalaPagar);
+console.log(totalAPagar); // 170
+
+// Every:
+//const contas = [10, 20, 40, 100];
+const contasBaixas = contas.every((valor) => valor < 10); // Verifica se ta tudo de acordo com a situação, se n retorna false
+console.log(contasBaixas); // False
+const contasBaixas2 = contas.every((valor) => valor < 101);
+console.log(contasBaixas2); // True
+
+// Some:     -> Mesma coisa que o Every só que precisa que ao menos um indice seja verdadeiro para ele retornar True
+//const contas = [10, 20, 40, 100];
+const valorBaixo = contas.some((valor) => valor > 10);
+console.log(valorBaixo);
+
+//concat:
+const contaDoCamandaroba = [10, 20, 30, 40, 50];
+const contaDaOutra = [5, 6, 7, 8, 9];
+const contaDosDois = contaDoCamandaroba.concat(contaDaOutra);
+console.table(contaDosDois);
