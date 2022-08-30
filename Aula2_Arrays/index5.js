@@ -50,3 +50,27 @@ console.table(contaZerada);
 const contaComSub = [10, 20, 30, 40, 50, [1, 2, 3, 4]];
 const novaContaSemSub = contaComSub.flat();
 console.table(novaContaSemSub);
+
+// Sort:
+const clientes = ['Vanessa', 'Gabriel', 'Camandaroba', 'Juliana', 'Gilberto'];
+console.table(clientes);
+clientes.sort();
+console.table(clientes);
+
+const numeros = [10, 5, 1000, 500000, 1.99];
+console.table(numeros);
+numeros.sort((a, b) => a - b); //se for >0 => b vem primeiro, se for <0 => a vem primeiro
+console.table(numeros);
+
+const clientesComEstrelas = [
+  ['Vanessa', 4],
+  ['Gabriel', 1],
+  ['Camandaroba', 5],
+  ['Juliana', 3],
+  ['Gilberto', 1],
+];
+clientesComEstrelas.sort((a, b) => a[1] - b[1]);
+console.table(clientesComEstrelas);
+
+clientesComEstrelas.sort((a, b) => b[1] - a[1]);
+console.table(clientesComEstrelas);
