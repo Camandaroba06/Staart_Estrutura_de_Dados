@@ -27,4 +27,10 @@ class Class_programador {
     this.Linguagens_Favoritas = Linguagens_Favoritas;
   }
 }
-const Camandaroba = new Class_programador();
+const Camandaroba = new Class_programador(
+  'Camandaroba06',
+  '04/06/03',
+  'UFJF',
+  'PET',
+  ['JS', 'PY']
+);
