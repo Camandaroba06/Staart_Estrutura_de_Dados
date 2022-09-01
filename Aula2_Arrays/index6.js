@@ -35,3 +35,6 @@ const Camandaroba = new Class_programador(
   ['JS', 'PY']
 );
 console.table(Camandaroba);
+for (const conteudo in Camandaroba) {
+  console.log(`${conteudo}: ${Camandaroba.conteudo}`);
+}
