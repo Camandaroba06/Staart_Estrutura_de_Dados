@@ -12,7 +12,7 @@ console.log(Programador.grupoFavorito);
 
 //Classes
 
-class Programador {
+class Class_programador {
   constructor(
     nome,
     nascimento,
