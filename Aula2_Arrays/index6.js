@@ -26,5 +26,5 @@ class Class_programador {
     this.grupoFavorito = grupoFavorito;
     this.Linguagens_Favoritas = Linguagens_Favoritas;
   }
-  const Camandaroba = new Class_programador
 }
+const Camandaroba = new Class_programador();
