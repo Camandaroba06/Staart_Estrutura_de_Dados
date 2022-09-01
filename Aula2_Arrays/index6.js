@@ -34,3 +34,4 @@ const Camandaroba = new Class_programador(
   'PET',
   ['JS', 'PY']
 );
+console.table(Camandaroba);
