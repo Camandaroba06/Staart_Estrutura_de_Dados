@@ -36,5 +36,5 @@ const Camandaroba = new Class_programador(
 );
 console.table(Camandaroba);
 for (const conteudo in Camandaroba) {
-  console.log(`${conteudo}: ${Camandaroba.conteudo}`);
+  console.log(`${conteudo}: ${Camandaroba[conteudo]}`);
 }
