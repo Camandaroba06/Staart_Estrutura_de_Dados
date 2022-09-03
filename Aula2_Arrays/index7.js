@@ -13,3 +13,20 @@
                     - isEmpty: Retorna um boleano se a pilha ta vazia ou n
                     - isFull: Retorna um boleano se a pilha ta cheia ou n
 */
+
+// Pilha
+
+class Pilha {
+  constructor() {
+    this.itens = [];
+  }
+  push(item) {
+    itens.push(item);
+  }
+}
+pilha_01 = new Pilha();
+pilha_01.push(10);
+pilha_01.push(20);
+pilha_01.push(30);
+pilha_01.push(40);
+console.table(pilha_01);
