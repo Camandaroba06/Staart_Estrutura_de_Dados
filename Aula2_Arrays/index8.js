@@ -26,6 +26,9 @@ class Fila {
     if (this.isEmpty()) return undefined;
     this.itens.shift();
   }
+  front() {
+    return this.itens[0];
+  }
 }
 fila_01 = new Fila();
 fila_01.enqueue('Ferrari');
@@ -35,3 +38,4 @@ fila_01.enqueue('HB20');
 console.table(fila_01.itens);
 fila_01.dequeue();
 console.table(fila_01.itens);
+console.log(fila_01.front());
