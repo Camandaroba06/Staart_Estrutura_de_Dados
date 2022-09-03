@@ -81,3 +81,7 @@ class Deque {
   }
 }
 const deque = new Deque();
+deque.insertFront('Ferrari');
+deque.insertFront('Fusca');
+deque.insertFront('Del Rey');
+console.table(deque.itens);
