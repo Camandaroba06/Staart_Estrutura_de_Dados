@@ -80,4 +80,4 @@ class Deque {
     return this.itens[this.itens.length - 1];
   }
 }
-const deque = new deque();
+const deque = new Deque();
