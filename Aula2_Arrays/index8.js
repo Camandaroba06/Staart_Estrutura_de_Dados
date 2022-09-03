@@ -10,8 +10,18 @@
             - isEmpty: Retorna um booleano se está vazia
             - isFull: Retorna um booleano se está cheia
     -> Aprendendo sobre Deques:
+        - Combina a ideia da fila com pilha
+          -> Principais Operações com Deques:
+            - insertFront: Insere um elemento na frente
+            - insertLast: Insere um item na cauda
+            - deleteFront: Remove o elemento da frente
+            - deleteLast: Remove o elemento da cauda
+            - front: Retorna o elemento da frente
+            - rear: Retorna o elemento da cauda
+            - isEmpty: Retorna o booleano se está vazio ou n
+            - isFull: Retorna o booleano se está cheio
 */
-
+// Fila:
 class Fila {
   constructor() {
     this.itens = [];
@@ -43,3 +53,15 @@ fila_01.dequeue();
 console.table(fila_01.itens);
 console.log(fila_01.front());
 console.log(fila_01.rear());
+
+class Deque {
+  constructor() {
+    this.itens = [];
+  }
+  insertFront(item) {
+    this.itens.unshift(item);
+  }
+  insertLast(item) {
+    this.itens.push(item);
+  }
+}
