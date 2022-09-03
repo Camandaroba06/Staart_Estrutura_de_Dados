@@ -21,7 +21,7 @@ class Pilha {
     this.itens = [];
   }
   push(item) {
-    itens.push(item);
+    this.itens.push(item);
   }
 }
 pilha_01 = new Pilha();
