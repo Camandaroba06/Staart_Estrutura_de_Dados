@@ -43,7 +43,7 @@ class Fila {
     return this.itens[this.itens.length - 1];
   }
 }
-fila_01 = new Fila();
+const fila_01 = new Fila();
 fila_01.enqueue('Ferrari');
 fila_01.enqueue('Fusca');
 fila_01.enqueue('Da li');
@@ -59,9 +59,25 @@ class Deque {
     this.itens = [];
   }
   insertFront(item) {
-    this.itens.unshift(item);
+    return this.itens.unshift(item);
   }
   insertLast(item) {
-    this.itens.push(item);
+    return this.itens.push(item);
+  }
+  deleteFront() {
+    return this.itens.shift();
+  }
+  deleteLast() {
+    return this.itens.pop();
+  }
+  isEmpty() {
+    return this.itens.length == 0;
+  }
+  front() {
+    return this.itens[0];
+  }
+  rear() {
+    return this.itens[this.itens.length - 1];
   }
 }
+const deque = new deque();
