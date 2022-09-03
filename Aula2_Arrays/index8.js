@@ -9,7 +9,7 @@
             - front/peek: Retorna o primeiro elemento
             - isEmpty: Retorna um booleano se está vazia
             - isFull: Retorna um booleano se está cheia
-
+    -> Aprendendo sobre Deques:
 */
 
 class Fila {
