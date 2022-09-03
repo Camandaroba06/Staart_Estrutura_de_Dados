@@ -29,6 +29,9 @@ class Fila {
   front() {
     return this.itens[0];
   }
+  rear() {
+    return this.itens[this.itens.length - 1];
+  }
 }
 fila_01 = new Fila();
 fila_01.enqueue('Ferrari');
@@ -39,3 +42,4 @@ console.table(fila_01.itens);
 fila_01.dequeue();
 console.table(fila_01.itens);
 console.log(fila_01.front());
+console.log(fila_01.rear());
