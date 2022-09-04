@@ -18,4 +18,4 @@ console.table(meuDicionario);
 meuDicionario.delete('vc');
 console.table(meuDicionario);
 meuDicionario.clear();
-console.log(meuDicionario);
+console.table(meuDicionario);
