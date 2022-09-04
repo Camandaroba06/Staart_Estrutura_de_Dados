@@ -1,3 +1,5 @@
+//Dicionario
+
 const meuDicionario = new Map();
 meuDicionario.set('oi', 'Oi tudo bem?');
 meuDicionario.set('blz', 'beleza');
@@ -17,5 +19,7 @@ meuDicionario.set(indiceContatos[2]);
 console.table(meuDicionario);
 meuDicionario.delete('vc');
 console.table(meuDicionario);
+console.log(meuDicionario);
+if (meuDicionario.has('oi')) console.log('Oi está no MAP');
 meuDicionario.clear();
 console.table(meuDicionario);
