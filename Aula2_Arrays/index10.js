@@ -17,3 +17,5 @@ meuDicionario.set(indiceContatos[2]);
 console.table(meuDicionario);
 meuDicionario.delete('vc');
 console.table(meuDicionario);
+meuDicionario.clear();
+console.log(meuDicionario);
