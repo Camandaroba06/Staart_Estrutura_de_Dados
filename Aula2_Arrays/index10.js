@@ -10,3 +10,10 @@ const indiceContatos = [
   ['Jorge', '984822352'],
   ['Alice', '983221235'],
 ];
+
+meuDicionario.set(indiceContatos[0], { nascimento: '04/07/1980' });
+meuDicionario.set(indiceContatos[1]);
+meuDicionario.set(indiceContatos[2]);
+console.table(meuDicionario);
+meuDicionario.delete('vc');
+console.table(meuDicionario);
